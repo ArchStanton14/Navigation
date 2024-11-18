@@ -7,17 +7,12 @@
 //This object will be a template usable for halls, floors, and buildings
 #ifndef HALL_
 #define HALL_
+#include "room.hpp"
 
 template <class T> 
 class hall{
     public:
-        struct room{
-            int number; 
-            //instructions to get there
-        }
-
-        findRoute(entrance, room)
-
+        
     private:
         std::vector<T> rooms;
         std::vector

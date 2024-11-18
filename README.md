@@ -1,7 +1,7 @@
 # Navigation
 A tool to help navigate indoor spaces
 
-Will read CSV to create a virtual map; use object and nodes to navigate between points within it, and later come up with some kind of graphical representation of this.
+Will read CSV to create a virtual map; use multi-level weighted graph objects to navigate through it, and later come up with some kind of graphical representation of this.
 
 Use giant hashmap of rooms and locations to find where to route to
 
