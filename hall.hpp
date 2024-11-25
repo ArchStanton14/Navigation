@@ -12,10 +12,10 @@
 template <class T> 
 class hall{
     public:
+        addRoom();
         
     private:
-        std::vector<T> rooms;
-        std::vector
+        //we don't need a member variable for rooms because they're dynamic linked objects
 
 
 };

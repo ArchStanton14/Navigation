@@ -10,6 +10,7 @@ template <class T> class room{
         //maybe could be hashmap?
         std::vector<T*> connections;    //adjacent structures
         std::vector<int> connectionWeights; //distance to them (same order)
+        tuple int coords;   //coordinates on map image, for graphical representation
     
     public:
         /*
