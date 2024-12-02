@@ -39,6 +39,8 @@ template <class T> class room{
 
         void addConnection(T* connection);
 
+        //add functions for weighting
+
 
 };
 #endif
