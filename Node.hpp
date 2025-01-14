@@ -16,23 +16,23 @@ class Node{
       
         Node();
         Node(const T& item);
-        Node(const T& item, std::vector<NW> connections);
+        Node(const T& item, std::vector<NW<T>> connections);
 
         void setItem(const T &item);
 
         T getItem() const;
 
-        void setConnections(const std::vector<NW>& connections);
+        void setConnections(const std::vector<NW<T>>& connections);
         
-        bool addConnection(const std::vector<NW>& connections);
+        bool addConnection(const NW<T>& connection);
 
-        bool removeConnection(const std::vector<NW>& connections);
+        bool removeConnection(const NW<T>& connection);    //remove all instances of a node
 
-        std::vector<NW> getConnections() const;
+        std::vector<NW<T>> getConnections() const;
 
     private:
-        T item;
-        std::vector<NW> connections;
+        T item_;
+        std::vector<NW> connections_;
 
 
 

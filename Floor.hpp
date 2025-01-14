@@ -17,14 +17,14 @@ class Floor{
         Floor(const std::vector<Node<Room>*>& rooms);
 
         void setRooms(std::vector<Node<Room>*> rooms);
-        bool addRoom(Node<Room> room);
+        bool addRoom(Node<Room>* room);
         std::vector<Node<Room>*> getRooms() const;
 
 
         std::vector<Node<Room>*> Djikstra(Node<Room>* start, Node<Room>* destination);    //our pathfinding algorithm. It will return a list of nodes to follow
 
     private:
-        std::vector<Node<Room>*> Rooms;
+        std::vector<Node<Room>*> rooms_;
 
     
 };
