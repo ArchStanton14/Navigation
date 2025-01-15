@@ -1,9 +1,16 @@
+#ifndef NODE_H
+#define NODE_H
 #include <vector>
+
 /*
     Node for naviagation in undirected graph. Must have weight to each connected node
 
 
  */
+
+template<class T>
+class Node;
+
 template<class T>
 struct NW{  //struct to keep track of weights of connections
     Node<T>* node;   //pointer to node
@@ -12,6 +19,9 @@ struct NW{  //struct to keep track of weights of connections
 
 template<class T>
 class Node{
+
+
+    
     public:
       
         Node();
@@ -32,8 +42,10 @@ class Node{
 
     private:
         T item_;
-        std::vector<NW> connections_;
+        std::vector<NW<T>> connections_;
 
 
 
 };
+
+#endif

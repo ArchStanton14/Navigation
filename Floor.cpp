@@ -13,6 +13,7 @@ void Floor::setRooms(std::vector<Node<Room>*> rooms){
 }
 bool Floor::addRoom(Node<Room>* room){
     rooms_.push_back(room);
+    return true;
 }
 std::vector<Node<Room>*> Floor::getRooms() const{
     return rooms_;

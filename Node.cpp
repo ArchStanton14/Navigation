@@ -21,7 +21,7 @@ void Node<T>::setItem(const T &item){
 
 template<class T>
 T Node<T>::getItem() const{
-    return item;
+    return item_;
 }
 
 template<class T>
@@ -37,9 +37,10 @@ bool Node<T>::addConnection(const NW<T>& connection){
 template<class T>
 bool Node<T>::removeConnection(const NW<T>& connection){
     bool removed = false;
-    for (int i = 0; i < connections_.size()){
+
+    for (int i = 0; i < connections_.size(); i++){
         if (connections_[i] == connection){
-            connections_.erase(i);
+            connections_.erase(connections_.begin() + i);
             removed = true;
         }
     }

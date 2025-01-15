@@ -1,3 +1,5 @@
+#ifndef FLOOR_H
+#define FLOOR_H
 #include "Node.hpp"
 #include <string>
 
@@ -28,3 +30,4 @@ class Floor{
 
     
 };
+#endif
