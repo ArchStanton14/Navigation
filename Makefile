@@ -13,6 +13,6 @@ $(PROG): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
 
 clean:
-	rm -rf $(EXEC) *.o *.out main 
+	rm -rf $(PROG) *.o *.out main 
 
 rebuild: clean all
